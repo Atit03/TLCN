@@ -27,21 +27,21 @@ const MyAddress = () => {
 
   return (
     <>
-      <h3 className="text-xl leading-6 font-bold text-gray-900">My Address</h3>
+      <h3 className="text-xl leading-6 font-bold text-gray-900">Địa chỉ</h3>
       <p className="mt-1 max-w-2xl text-sm text-gray-500">
-        Set default address by clicking on any of your created addresses below.
+        Đặt địa chỉ mặc định bằng cách nhấp vào bất kỳ địa chỉ nào bạn đã tạo bên dưới.
       </p>
       <hr className="border-b border-grayish-blue mt-3 mb-8" />
       <div className="relative">
         {deleting && (
-          <p className="absolute -top-7 text-sm text-orange">Deleting...</p>
+          <p className="absolute -top-7 text-sm text-orange">Đang xoá...</p>
         )}
         {error && (
           <p className="absolute -top-7 text-sm text-[red]">{errorMsg}</p>
         )}
         {settingDefault && (
           <p className="absolute -top-7 text-sm text-orange">
-            Setting Default Address...
+            Đặt địa chỉ mặc định...
           </p>
         )}
         {updateForm ? (

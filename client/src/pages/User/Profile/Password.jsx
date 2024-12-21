@@ -26,9 +26,9 @@ const Password = () => {
 
   return (
     <>
-      <h3 className="text-xl leading-6 font-bold text-gray-900">Password</h3>
+      <h3 className="text-xl leading-6 font-bold text-gray-900">Mật khẩu</h3>
       <p className="mt-1 max-w-2xl text-sm text-gray-500">
-        Update your password here.
+        Cập nhật mật khẩu của bạn ở đây.
       </p>
       <hr className="border-b border-grayish-blue mt-3 mb-8" />
       <form
@@ -44,8 +44,7 @@ const Password = () => {
           <label
             htmlFor="current-password"
             className="block text-sm font-medium text-gray-700"
-          >
-            Current Password
+          >Mật khẩu hiện tại
           </label>
           <div className="mt-1">
             <input
@@ -63,7 +62,7 @@ const Password = () => {
             htmlFor="new-password"
             className="block text-sm font-medium text-gray-700"
           >
-            New Password
+            Mật khẩu mới
           </label>
           <div className="mt-1">
             <input
@@ -81,7 +80,7 @@ const Password = () => {
             htmlFor="confirm-password"
             className="block text-sm font-medium text-gray-700"
           >
-            Confirm New Password
+            Nhập lại mật khẩu mới
           </label>
           <div className="mt-1">
             <input
@@ -111,7 +110,7 @@ const Password = () => {
               <span className="sr-only">Loading...</span>
             </div>
           ) : (
-            <>Save Changes</>
+            <>Lưu</>
           )}
         </button>
       </form>

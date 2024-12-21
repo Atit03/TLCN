@@ -52,7 +52,7 @@ const UserProfile = () => {
                 x-state-description='Current: "bg-pale-orange border-orange text-dark-grayish-blue", Default: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900"'
               >
                 <ion-icon class="p-2 text-base" name="person"></ion-icon>
-                <span className="truncate">My Account</span>
+                <span className="truncate">Tài khoản</span>
               </NavLink>
 
               <NavLink
@@ -66,7 +66,7 @@ const UserProfile = () => {
                 x-state-description='undefined: "bg-pale-orange border-orange text-dark-grayish-blue", undefined: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900"'
               >
                 <ion-icon class="p-2 text-base" name="basket"></ion-icon>
-                <span className="truncate">My Orders</span>
+                <span className="truncate">Đơn hàng</span>
               </NavLink>
 
               <NavLink
@@ -80,10 +80,10 @@ const UserProfile = () => {
                 x-state-description='undefined: "bg-pale-orange border-orange text-dark-grayish-blue", undefined: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900"'
               >
                 <ion-icon class="p-2 text-base" name="location"></ion-icon>
-                <span className="truncate">My Address</span>
+                <span className="truncate">Địa chỉ</span>
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="notifications"
                 className={({ isActive }) =>
                   "text-dark-grayish-blue group  px-3 py-2 flex items-center text-sm font-medium" +
@@ -95,7 +95,7 @@ const UserProfile = () => {
               >
                 <ion-icon class="p-2 text-base" name="notifications"></ion-icon>
                 <span className="truncate">Notifications</span>
-              </NavLink>
+              </NavLink> */}
 
               <NavLink
                 to="password"
@@ -108,7 +108,7 @@ const UserProfile = () => {
                 x-state-description='undefined: "bg-pale-orange border-orange text-dark-grayish-blue", undefined: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900"'
               >
                 <ion-icon class="p-2 text-base" name="key"></ion-icon>
-                <span className="truncate">Password</span>
+                <span className="truncate">Mật khẩu</span>
               </NavLink>
 
               <NavLink
@@ -122,7 +122,7 @@ const UserProfile = () => {
                 x-state-description='undefined: "bg-pale-orange border-orange text-dark-grayish-blue", undefined: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900"'
               >
                 <ion-icon class="p-2 text-base" name="settings"></ion-icon>
-                <span className="truncate">Account setting</span>
+                <span className="truncate">Cài đặt tài khoản</span>
               </NavLink>
               <hr className="text-grayish-blue" />
               <button
@@ -130,7 +130,7 @@ const UserProfile = () => {
                 className="text-grayish-blue flex items-center px-3 py-2"
               >
                 <ion-icon class="p-2 text-base" name="log-out"></ion-icon>
-                <span className="truncate">Log out</span>
+                <span className="truncate">Đăng xuất</span>
               </button>
             </nav>
           </div>
@@ -149,14 +149,14 @@ const UserProfile = () => {
                           <Outlet />
                         ) : (
                           <>
-                            Please{" "}
+                            Hãy{" "}
                             <NavLink
                               to="/login"
                               className="text-sm border-b-2 border-b-orange font-bold"
                             >
-                              Login
+                              Đăng nhập
                             </NavLink>{" "}
-                            to view this page
+                            để tiếp tục
                           </>
                         )}
                       </>
@@ -170,14 +170,14 @@ const UserProfile = () => {
               </>
             ) : (
               <>
-                Please{" "}
+                Hãy{" "}
                 <NavLink
                   to="/login"
                   className="text-sm border-b-2 border-b-orange font-bold"
                 >
-                  Login
+                  Đăng nhập
                 </NavLink>{" "}
-                to view this page
+                để tiếp tục
               </>
             )}{" "}
           </div>

@@ -127,7 +127,7 @@ const Header = () => {
                       : "before:w-full text-white lg:text-very-dark-blue")
                   }
                 >
-                  Collections
+                  Thương hiệu
                 </NavLink>
               </li>
               <li className="relative h-12 lg:h-inherit">
@@ -141,7 +141,7 @@ const Header = () => {
                       : "before:w-full text-white lg:text-very-dark-blue")
                   }
                 >
-                  Men
+                  Nam
                 </NavLink>
               </li>
               <li className="relative h-12 lg:h-inherit">
@@ -155,7 +155,7 @@ const Header = () => {
                       : "before:w-full text-white lg:text-very-dark-blue")
                   }
                 >
-                  Women
+                  Nữ
                 </NavLink>
               </li>
               <li className="relative h-12 lg:h-inherit">
@@ -170,7 +170,7 @@ const Header = () => {
                   }
                   end
                 >
-                  All
+                  Tất cả
                 </NavLink>
               </li>
               <li className="relative h-12 lg:h-inherit">
@@ -184,7 +184,7 @@ const Header = () => {
                       : "before:w-full text-white lg:text-very-dark-blue")
                   }
                 >
-                  Contact
+                  Liên hệ
                 </NavLink>
               </li>
             </ul>
@@ -193,7 +193,7 @@ const Header = () => {
                 <li>
                   <NavLink to="/login">
                     <button className="h-10 w-full sm:hidden bg-orange px-4 rounded-lg lg:rounded-xl text-white flex items-center justify-center hover:bg-white shadow-[inset_0_0_0_0_rgba(255,125,26,0.6)] hover:shadow-[inset_0_-4rem_0_0_rgba(255,125,26,0.6)] transition-all duration-300">
-                      Login
+                      Đăng nhập
                     </button>
                   </NavLink>
                 </li>
@@ -233,7 +233,7 @@ const Header = () => {
             {!userInfo ? (
               <NavLink to="/login">
                 <button className="h-10 hidden sm:block bg-orange px-4 rounded-lg lg:rounded-xl ml-2 text-white flex items-center justify-center border shadow-[inset_0_-1px_0_0_#ffede1] hover:shadow-[inset_0_-4rem_0_0_#ffede1] hover:text-orange overflow-hidden transition-all duration-300">
-                  Login
+                  Đăng nhập
                 </button>
               </NavLink>
             ) : (

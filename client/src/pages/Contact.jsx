@@ -8,7 +8,7 @@ const Contact = () => {
     <section className="bg-light-grayish-blue h-auto pt-2 min-h-[80vh]">
       <div className="max-w-xl sm:max-w-4xl lg:max-w-7xl relative px-5 pt-20 pb-12 items-center mx-auto lg:mx-20 xl:mx-28 2xl:mx-40 3xl:mx-auto lg:pb-2 lg:px-1 xl:px-3 2xl:px-1">
         <h2 className="product capitalize text-white font-bold text-center relative z-[1] lg:text-left text-3xl sm:text-4xl sm:leading-none pb-3 px-8">
-          Contact
+          Liên hệ
         </h2>
         <div className="absolute top-0 left-0 bg-dark-grayish-blue w-full h-48 rounded-md overflow-hidden">
           <img
@@ -20,8 +20,8 @@ const Contact = () => {
 
         <div className="flex mt-32 bg-pale-orange shadow-xl flex-col lg:flex-row max-w-xl lg:max-w-7xl mx-auto mb-32">
           <div className="other-contact flex-1 lg:mr-6 text-very-dark-blue text-base lg:text-2xl px-3 sm:px-5 lg:px-8 py-4 lg:py-16">
-            <p className="font-bold">Got questions or feedbacks for us?</p>
-            <p className="font-bold">Fill the form here to reach us.</p>
+            <p className="font-bold">Bạn có câu hỏi cho chúng tôi?</p>
+            <p className="font-bold">Điền vào mẫu ở đây để liên hệ với chúng tôi.</p>
 
             <ul className="contact-details mt-8 lg:mt-20 text-dark-grayish-blue text-sm lg:text-lg">
               <li className="w-full flex items-center mb-4">
@@ -30,17 +30,17 @@ const Contact = () => {
                   class="text-very-dark-blue"
                 ></ion-icon>
                 <p className="font-bold ml-2 sm:ml-4">
-                  Sneakers Company,{" "}
-                  <span className="font-normal">Victoria Island, Lagos</span>
+                  UteSneakers,{" "}
+                  <span className="font-normal">266, Tôn Đản, phường 8, quận 4, HCM</span>
                 </p>
               </li>
               <li className="w-full flex items-center mb-4">
                 <ion-icon name="call" class="text-very-dark-blue"></ion-icon>
-                <p className="ml-2 sm:ml-4">(123)-456-778</p>
+                <p className="ml-2 sm:ml-4">0903839475</p>
               </li>
               <li className="w-full flex items-center mb-4">
                 <ion-icon name="mail" class="text-very-dark-blue"></ion-icon>
-                <p className="ml-2 sm:ml-4">hikma@sneakerscompany.com</p>
+                <p className="ml-2 sm:ml-4">21110897@student.hcmute.edu.vn</p>
               </li>
             </ul>
           </div>
@@ -58,7 +58,7 @@ const Contact = () => {
                   htmlFor="email"
                   className="absolute left-0 -top-3.5 text-dark-grayish-blue text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-grayish-blue peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-dark-grayish-blue peer-focus:text-sm"
                 >
-                  Name
+                  Họ và tên
                 </label>
               </div>
               <div className="relative mt-10">
@@ -73,7 +73,7 @@ const Contact = () => {
                   htmlFor="email"
                   className="absolute left-0 -top-3.5 text-dark-grayish-blue text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-grayish-blue peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-dark-grayish-blue peer-focus:text-sm"
                 >
-                  Email address
+                  Email
                 </label>
               </div>
 
@@ -89,7 +89,7 @@ const Contact = () => {
                   htmlFor="email"
                   className="absolute left-0 -top-3.5 text-dark-grayish-blue text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-grayish-blue peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-dark-grayish-blue peer-focus:text-sm"
                 >
-                  Title
+                  Tiêu đề
                 </label>
               </div>
 
@@ -105,11 +105,11 @@ const Contact = () => {
                   htmlFor="message"
                   className="absolute left-0 -top-3.5 text-dark-grayish-blue text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-grayish-blue peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-dark-grayish-blue peer-focus:text-sm"
                 >
-                  Message
+                  Tin nhắn
                 </label>
               </div>
               <button className="cart w-full h-14 max-w-lg lg:max-w-none bg-orange rounded-lg lg:rounded-xl mt-3 mb-2 text-white flex items-center justify-center lg:w-3/5 shadow-[inset_0_-1px_0_0_#ffede1] hover:shadow-[inset_0_-4rem_0_0_#ffede1] hover:text-orange border transition-all duration-300">
-                Submit
+                Gửi
               </button>
             </form>
           </div>

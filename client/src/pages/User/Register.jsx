@@ -54,7 +54,7 @@ const Register = () => {
       <div className="wrapper w-full min-h-screen py-12 sm:py-8 flex items-center justify-center">
         <div className="wrapper w-5/6 sm:w-3/4 md:w-3/5 xl:w-2/5 container py-16 px-8 sm:px-12 bg-white relative">
           <h1 className="title text-xl sm:text-2xl lg:text-3xl mb-12 font-bold">
-            CREATE AN ACCOUNT
+            TẠO TÀI KHOẢN
           </h1>
           <form
             className="flex flex-wrap justify-between w-full"
@@ -86,7 +86,7 @@ const Register = () => {
                 htmlFor="firstname"
                 className="absolute left-0 -top-3.5 text-dark-grayish-blue text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-grayish-blue peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-dark-grayish-blue peer-focus:text-sm"
               >
-                First Name
+                Họ và tên đệm
               </label>
             </div>
             <div className="relative w-full lg:w-[45%] mb-2 py-3">
@@ -109,7 +109,7 @@ const Register = () => {
                 htmlFor="lastname"
                 className="absolute left-0 -top-3.5 text-dark-grayish-blue text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-grayish-blue peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-dark-grayish-blue peer-focus:text-sm"
               >
-                Last Name
+                Tên
               </label>
             </div>
             <div className="relative w-full  mb-2 py-3">
@@ -132,7 +132,7 @@ const Register = () => {
                 htmlFor="username"
                 className="absolute left-0 -top-3.5 text-dark-grayish-blue text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-grayish-blue peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-dark-grayish-blue peer-focus:text-sm"
               >
-                username
+                Username
               </label>
             </div>
             <div className="relative w-full  mb-2 py-3">
@@ -186,7 +186,7 @@ const Register = () => {
                 htmlFor="password"
                 className="absolute left-0 -top-3.5 text-dark-grayish-blue text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-grayish-blue peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-dark-grayish-blue peer-focus:text-sm"
               >
-                Password
+                Mật khẩu
               </label>
             </div>
             <div className="relative w-full lg:w-[45%] mb-6 py-3">
@@ -213,17 +213,17 @@ const Register = () => {
                 htmlFor="confirm-password"
                 className="absolute left-0 -top-3.5 text-dark-grayish-blue text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-grayish-blue peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-dark-grayish-blue peer-focus:text-sm"
               >
-                Confirm Password
+                Nhập lại mật khẩu
               </label>
             </div>
-            <div className="agreement text-sm text-dark-grayish-blue py-4">
+            {/* <div className="agreement text-sm text-dark-grayish-blue py-4">
               By creating an account, I consent to the processing of my personal
               data in accordance with the <b>PRIVACY POLICY</b>
-            </div>
+            </div> */}
             <button
               className={
                 "w-full h-12 max-w-lg lg:max-w-none bg-orange rounded-md mt-3 lg:mt-5 mb-2 text-white flex items-center justify-center lg:w-2/5 shadow-[inset_0_-1px_0_0_#ffede1] hover:shadow-[inset_0_-4rem_0_0_#ffede1] hover:text-orange border transition-all duration-300 " +
-                (loading ? "cursor-not-allowed" : "cursor-auto")
+                (loading ? "cursor-not-allowed" : "cursor-pointer")
               }
               disabled={loading}
             >
@@ -235,19 +235,19 @@ const Register = () => {
                   <span className="sr-only">Loading...</span>
                 </div>
               ) : (
-                <>CREATE</>
+                <>ĐĂNG KÝ</>
               )}
             </button>
             <div className="links mt-12 flex flex-wrap w-full">
               <span className="text-dark-grayish-blue lg:mr-4">
-                Already have an account?{" "}
+                Đã có tài khoản?{" "}
               </span>
               <NavLink
                 to="/login"
                 className="border-b-2 border-solid border-transparent hover:border-orange transition-color"
                 href="/"
               >
-                LOGIN
+                ĐĂNG NHẬP
               </NavLink>
             </div>
           </form>

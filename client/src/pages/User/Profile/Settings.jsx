@@ -37,9 +37,9 @@ const Settings = () => {
 
   return (
     <>
-      <h3 className="text-xl leading-6 font-bold text-gray-900">Settings</h3>
+      <h3 className="text-xl leading-6 font-bold text-gray-900">Cài đặt</h3>
       <p className="mt-1 max-w-2xl text-sm text-gray-500">
-        Edit and update your personal details.
+        Chỉnh sửa và cập nhật thông tin cá nhân của bạn.
       </p>
       <hr className="border-b border-grayish-blue mt-3 mb-8" />
       <form className="lg:mb-24 w-full" onSubmit={handleSubmit(submitForm)}>
@@ -52,12 +52,12 @@ const Settings = () => {
         <dl className="grid grid-cols-1 gap-x-4 sm:grid-cols-1 divide-y divide-gray-200">
           <div className="sm:grid sm:grid-cols-3 sm:gap-4 py-4">
             <dt className="text-sm font-medium text-dark-grayish-blue px-2">
-              Full Name
+              Họ và tên
             </dt>
             <dd className="mt-1 flex text-sm text-very-dark-blue sm:mt-0 sm:col-span-2">
               <span className="sm:flex flex-grow min-w-[6rem]">
                 <label htmlFor="firstname" className="hidden">
-                  first name
+                  Họ và tên đệm
                 </label>
                 <input
                   className={
@@ -73,7 +73,7 @@ const Settings = () => {
                   {...register("firstname")}
                 />
                 <label htmlFor="lastname" className="hidden">
-                  last name
+                  Tên
                 </label>
                 <input
                   className={
@@ -116,11 +116,11 @@ const Settings = () => {
           </div>
           <div className="sm:grid sm:grid-cols-3 sm:gap-4 py-4">
             <dt className="text-sm font-medium text-dark-grayish-blue px-2">
-              Phone Number
+              Số điện thoại
             </dt>
             <dd className="mt-1 flex text-sm text-very-dark-blue sm:mt-0 sm:col-span-2">
               <label htmlFor="phone" className="hidden">
-                phone number
+                số điện thoại
               </label>
               <input
                 className={
@@ -139,12 +139,12 @@ const Settings = () => {
           </div>
           <div className="sm:grid sm:grid-cols-3 sm:gap-4 py-4">
             <dt className="text-sm font-medium text-dark-grayish-blue px-2">
-              Gender
+              Giới tính
             </dt>
             <dd className="mt-1 flex text-sm text-very-dark-blue sm:mt-0 sm:col-span-2">
               <div className="flex-grow sm:text-center">
                 <label htmlFor="gender" className="hidden">
-                  gender
+                  giới tính
                 </label>
                 <select
                   id="gender"
@@ -157,9 +157,9 @@ const Settings = () => {
                   disabled={!editable}
                 >
                   <option></option>
-                  <option>Male</option>
-                  <option>Female</option>
-                  <option>Others</option>
+                  <option>Nam</option>
+                  <option>Nữ</option>
+                  <option>Khác</option>
                 </select>
               </div>
             </dd>
@@ -177,7 +177,7 @@ const Settings = () => {
               }
               onClick={() => dispatch(enableUpdate())}
             >
-              {editable ? "Update" : "Edit"}
+              {editable ? "Cập nhật" : "Sửa"}
             </button>
           )}
           {editable && (
@@ -199,7 +199,7 @@ const Settings = () => {
                     <span className="sr-only">Loading...</span>
                   </div>
                 ) : (
-                  <>Update</>
+                  <>Cập nhật</>
                 )}
               </button>
               <button

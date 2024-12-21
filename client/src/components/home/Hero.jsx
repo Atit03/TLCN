@@ -16,16 +16,14 @@ const Hero = () => {
           className="container order-2 lg:order-1 text-center lg:text-left mx-auto pt-5 sm:pt-10 lg:pt-5 pb-20 lg:pb-5 lg:px-0 xl:mr-1 w-full lg:w-1/2 relative z-[1]"
         >
           <h1 className="capitalize text-very-dark-blue font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl sm:leading-none pb-1 sm:pb-5">
-            Discover your dream sneakers
+            Khám phá đôi giày thể thao mơ ước của bạn
           </h1>
           <p className="text-dark-grayish-blue lg:leading-6 py-6 lg:py-7">
-            With a wide range of quality and affordable sneakers to choose from,
-            browse through our collections for that sneakers you’ve always
-            wanted.
+             Với nhiều mẫu giày thể thao chất lượng và giá cả phải chăng để bạn lựa chọn. Duyệt qua bộ sưu tập của chúng tôi để tìm những đôi giày thể thao mà bạn luôn yêu thích muốn.
           </p>
           <Link to="products">
             <button className="w-full h-14 max-w-lg lg:max-w-none bg-orange rounded-lg lg:rounded-xl mt-3 mb-2 text-white flex items-center justify-center lg:w-3/5 hover:bg-white shadow-[inset_0_0_0_0_rgba(255,125,26,0.6)] hover:shadow-[inset_0_-4rem_0_0_rgba(255,125,26,0.6)] transition-all duration-300 mx-auto lg:ml-0 lg:mr-auto">
-              Explore Products
+              Sản phẩm
             </button>
           </Link>
         </motion.div>

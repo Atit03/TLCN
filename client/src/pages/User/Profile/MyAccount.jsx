@@ -7,9 +7,9 @@ const MyAccount = () => {
   const { userInfo } = useSelector((state) => state.auth);
   return (
     <AnimatePresence>
-      <h3 className="text-xl leading-6 font-bold text-gray-900">My Account</h3>
+      <h3 className="text-xl leading-6 font-bold text-gray-900">Tài khoản</h3>
       <p className="mt-1 max-w-2xl text-sm text-gray-500">
-        Personal details and application.
+        Thông tin cá nhân và ứng dụng.
       </p>
       <hr className="border-b border-grayish-blue mt-3 mb-8" />
       <dl className="grid grid-cols-1 gap-x-4 sm:grid-cols-1 divide-y divide-gray-200">
@@ -20,7 +20,7 @@ const MyAccount = () => {
           className="sm:grid sm:grid-cols-3 sm:gap-4 py-4"
         >
           <dt className="text-sm font-medium text-dark-grayish-blue px-2">
-            Full Name
+            Họ và tên
           </dt>
           <dd className="mt-1 flex text-sm text-very-dark-blue sm:mt-0 sm:col-span-2">
             <span className="sm:flex flex-grow px-2">
@@ -49,7 +49,7 @@ const MyAccount = () => {
             className="sm:grid sm:grid-cols-3 sm:gap-4 py-4"
           >
             <dt className="text-sm font-medium text-dark-grayish-blue px-2">
-              Phone Number
+              Số điện thoại
             </dt>
             <dd className="mt-1 flex text-sm text-very-dark-blue sm:mt-0 sm:col-span-2 px-2">
               {userInfo.phone}
@@ -66,7 +66,7 @@ const MyAccount = () => {
             className="sm:grid sm:grid-cols-3 sm:gap-4 py-4"
           >
             <dt className="text-sm font-medium text-dark-grayish-blue px-2">
-              Gender
+              Giới tính
             </dt>
             <dd className="mt-1 flex text-sm text-very-dark-blue sm:mt-0 sm:col-span-2 px-2">
               {userInfo.gender}

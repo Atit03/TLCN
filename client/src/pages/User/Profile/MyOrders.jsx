@@ -11,10 +11,10 @@ const MyOrders = () => {
   return (
     <div className="">
       <h3 className="text-xl leading-6 font-bold text-very-dark-blue">
-        My Orders
+        Đơn hàng
       </h3>
       <p className="mt-1 max-w-2xl text-sm text-dark-grayish-blue">
-        Order history details
+        lịch sử mua hàng
       </p>
       <hr className="border-b border-grayish-blue mt-3 mb-8" />
 
@@ -22,7 +22,7 @@ const MyOrders = () => {
         {userInfo && orders.length > 0 ? (
           <>
             <h3 className="sr-only">
-              Order placed on <time dateTime="2021-07-06">Jul 6, 2021</time>
+            Đơn hàng được đặt vào <time dateTime="2021-07-06">Jul 6, 2021</time>
             </h3>
             {orders.map((order, index) => (
               <>
@@ -35,7 +35,7 @@ const MyOrders = () => {
                     <div className="flex flex-col lg:flex-row relative">
                       <div className="lg:px-2 xl:px-6 flex lg:flex-col flex-row justify-between py-1 lg:py-0 h-fit">
                         <dt className="font-bold text-very-dark-blue">
-                          Order number
+                          Mã đơn hàng
                         </dt>
                         <dd className="mt-1 text-dark-grayish-blue uppercase flex-wrap text-[0.5rem] sm:[0.6rem]">
                           {order.paymentID.slice(3)}
@@ -43,7 +43,7 @@ const MyOrders = () => {
                       </div>
                       <div className="lg:px-2 xl:px-6 flex lg:flex-col flex-row justify-between py-1 lg:py-0 h-fit hidden sm:flex">
                         <dt className="font-bold text-very-dark-blue">
-                          Date placed
+                          Ngày đặt
                         </dt>
                         <dd className="mt-1 text-dark-grayish-blue">
                           <time dateTime={`${order.createdAt.slice(0, 10)}`}>
@@ -55,7 +55,7 @@ const MyOrders = () => {
                       </div>
                       <div className="lg:px-2 xl:px-6 flex lg:flex-col flex-row justify-between py-1 lg:py-0 h-fit">
                         <dt className="font-bold text-very-dark-blue">
-                          Total amount
+                          Tổng số tiền
                         </dt>
                         <dd className="mt-1 font-medium text-very-dark-blue">
                           $ {order.amount.toFixed(2)}
@@ -64,7 +64,7 @@ const MyOrders = () => {
                     </div>
                     <div className="flex lg:flex-col flex-row relative justify-between py-1 lg:py-0 h-fit lg:min-w-[20%]">
                       <dt className="font-bold text-very-dark-blue">
-                        Delivery Details
+                        Chi tiết giao hàng
                       </dt>
                       <dd className="mt-1 font-medium text-very-dark-blue text-end lg:text-start text-xs">
                         <address className="not-italic text-very-dark-blue w-full">

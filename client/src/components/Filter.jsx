@@ -40,7 +40,7 @@ const Filter = () => {
     <div className="wrapper mt-28 lg:mt-40 flex flex-col sm:flex-row justify-between mx-auto sm">
       <div className="filter-container mb-4 sm:mb-0 flex items-center justify-between sm:mr-8">
         <span className="font-bold text-base md:text-xl mr-2 sm:mr-10">
-          Filter Products:
+          Tìm kiếm sản phẩm theo:
         </span>
         <div className="flex">
           <select
@@ -49,7 +49,7 @@ const Filter = () => {
             name="color"
             onChange={handleFilter}
           >
-            <option value="">Color</option>
+            <option value="">Màu</option>
             {colors.map((color, index) => (
               <option key={index} value={color}>
                 {color}
@@ -62,7 +62,7 @@ const Filter = () => {
             name="company"
             onChange={handleFilter}
           >
-            <option value="">brand</option>
+            <option value="">Thương hiệu</option>
             {brands.map((brand, index) => (
               <option key={index} value={brand}>
                 {brand}
@@ -73,7 +73,7 @@ const Filter = () => {
       </div>
       <div className="sort-container flex items-center justify-between">
         <span className="font-bold md:text-xl mr-2 sm:mr-10">
-          Sort Products:
+          Giá:
         </span>
         <select
           className="appearance-none px-3 py-2 border border-solid transition ease-in-out m-0 focus:outline-none bg-white"
@@ -81,9 +81,9 @@ const Filter = () => {
           name="sortBy"
           onChange={handleSort}
         >
-          <option value="newest">Newest</option>
-          <option value="asc">Price, low-high</option>
-          <option value="desc">Price, high-low</option>
+          <option value="newest">Mới nhất</option>
+          <option value="asc">Thấp-cao</option>
+          <option value="desc">Cao-thấp</option>
         </select>
       </div>
     </div>
