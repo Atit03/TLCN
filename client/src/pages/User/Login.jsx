@@ -18,7 +18,7 @@ const Login = () => {
   // redirect authenticated user to profile screen
   useEffect(() => {
     if (userInfo) {
-      navigate("/user-profile");
+      navigate("/");
       // eslint-disable-next-line
     }
   }, [navigate, userInfo]);
