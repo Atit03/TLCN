@@ -36,47 +36,46 @@ const Footer = () => {
           <ul className="px-4">
             <li className="my-3 hover:text-orange w-fit sm:w-full mx-auto sm:mx-0">
               <a href="/collections" className="">
-                Collections
+                Thương hiệu
               </a>
             </li>
             <li className="my-3 hover:text-orange w-fit sm:w-full mx-auto sm:mx-0">
-              <a href="/about-us" className="">
-                About us
+              <a href="/about" className="">
+                Về chúng tôi
               </a>
             </li>
             <li className="my-3 hover:text-orange w-fit sm:w-full mx-auto sm:mx-0">
               <a href="/contact" className="">
-                Contact
+                Liên lạc
               </a>
             </li>
           </ul>
           <ul className="px-4">
             <li className="my-3 hover:text-orange w-fit sm:w-full mx-auto sm:mx-0">
               <a href="/products" className="">
-                Products
+                Sản phẩm
               </a>
             </li>
             <li className="my-3 hover:text-orange w-fit sm:w-full mx-auto sm:mx-0">
               <a href="/products/men" className="">
-                Men
+                Nam
               </a>
             </li>
             <li className="my-3 hover:text-orange w-fit sm:w-full mx-auto sm:mx-0">
               <a href="/products/women" className="">
-                Women
+                Nữ
               </a>
             </li>
           </ul>
         </nav>
         <div className="copyright text-center md:text-left mb-8 md:mb-0">
-          © Copyright 2022{" "}
+          © Copyright 2024{" "}
           <a
-            href="https://hikmah-yousuph.vercel.app/"
+            href="https://www.facebook.com/locnt21110897"
             className="border-bottom rounded-sm shadow-[inset_0_-1px_0_0_#fff] hover:shadow-[inset_0_-4rem_0_0_#ff7d1a] hover:text-very-dark-blue py-1 transition-all duration-300"
           >
-            Hikmah Yousuph.
+            Nguyen Thanh Loc.
           </a>{" "}
-          All rights reserved.
         </div>
       </div>
     </footer>

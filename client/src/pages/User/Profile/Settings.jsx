@@ -109,7 +109,7 @@ const Settings = () => {
                 placeholder="Email"
                 type="text"
                 defaultValue={userInfo.email}
-                disabled={!editable}
+                disabled
                 {...register("email")}
               />
             </dd>

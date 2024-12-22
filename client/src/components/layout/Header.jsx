@@ -237,7 +237,14 @@ const Header = () => {
                 </button>
               </NavLink>
             ) : (
-              <NavLink to="/user-profile" className="ml-4 lg:ml-0 lg:mt-2">
+              // <NavLink to="/user-profile" className="ml-4 lg:ml-0 lg:mt-2">
+              //   <i className="cursor-pointer text-2xl !leading-none lg:text-xl transition-colors mt-2 text-grayish-blue hover:text-very-dark-blue">
+              //     <ion-icon name="person">
+              //       <title>Username</title>
+              //     </ion-icon>
+              //   </i>
+              // </NavLink>
+              <NavLink to={userInfo.isAdmin ? '/admin-dashboard' : '/user-profile'} className="ml-4 lg:ml-0 lg:mt-2">
                 <i className="cursor-pointer text-2xl !leading-none lg:text-xl transition-colors mt-2 text-grayish-blue hover:text-very-dark-blue">
                   <ion-icon name="person">
                     <title>Username</title>
