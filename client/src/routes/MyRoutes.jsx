@@ -28,6 +28,7 @@ import ReadProducts from "../pages/Admin/Products/ReadProducts";
 import ReadOrders from "../pages/Admin/Orders/ReadOrders";
 import UserDetail from "../pages/Admin/Users/UserDetail";
 import ProductDetail from "../pages/Admin/Products/ProductDetail";
+import CreateProduct from "../pages/Admin/Products/CreateProduct";
 
 const MyRoutes = () => {
   const user = false;
@@ -47,9 +48,9 @@ const MyRoutes = () => {
         <Route path="/products/women" element={<Women />} />
         <Route path="/products/:id" element={<ProductPage />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={user ? <Navigate to="/" replace={true}  /> : <Login />} />
-        <Route path="/register" element={user ? <Navigate to="/" replace={true}  /> : <Register />} />
-        <Route path="/user-profile" element={ <UserProfile/>}>
+        <Route path="/login" element={user ? <Navigate to="/" replace={true} /> : <Login />} />
+        <Route path="/register" element={user ? <Navigate to="/" replace={true} /> : <Register />} />
+        <Route path="/user-profile" element={<UserProfile />}>
           <Route path="" element={<MyAccount />} />
           <Route path="orders" element={<MyOrders />} />
           <Route path="addresses" element={<MyAddress />} />
@@ -65,7 +66,8 @@ const MyRoutes = () => {
         </Route>
         <Route path="/user-detail/:id" element={<UserDetail />} />
         <Route path="/product-detail/:id" element={<ProductDetail />} />
-        <Route path="/checkout" element={ (userInfo? userCartItems.length <1 : cartItems.length<1)  ? <Navigate to="/products" replace={true}  /> : <Checkout />} />
+        <Route path="/create-product" element={<CreateProduct />} />
+        <Route path="/checkout" element={(userInfo ? userCartItems.length < 1 : cartItems.length < 1) ? <Navigate to="/products" replace={true} /> : <Checkout />} />
         <Route path="/payment" element={<PaymentSuccessful />} />
       </Routes>
     </Layout>

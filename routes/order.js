@@ -15,13 +15,15 @@ dotenv.config({ path: "../config/config.env" });
 // @ access Private
 router.get("/", verifyTokenAndAdmin, async (req, res) => {
   try {
-    const orders = await Order.find();
+    // Populate thêm thông tin từ User
+    const orders = await Order.find().populate("user", "lastname email");
     res.status(200).json(orders);
   } catch (err) {
     console.error(err.message);
     res.status(500).send("Server Error");
   }
 });
+
 
 // @ route GET api/order
 // @ desc  Get user orders
